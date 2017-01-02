@@ -38,6 +38,7 @@ def to_continue():
 def print_sorted():
     squares = triangles.keys()
     squares.sort()
+    squares = squares[::-1]
     print "-Triangle-"
     for i in squares:
         print "%s: %s" %(triangles[i], i)
